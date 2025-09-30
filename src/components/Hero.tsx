@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <div className="w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden ring-2 ring-primary/30 shadow-lg">
             <img
-              src="/picture/pic(530-680).jpg"
+              src={`${import.meta.env.BASE_URL}picture/pic(530-680).jpg`}
               alt="Profile"
               className="w-full h-full object-cover"
               loading="eager"
