@@ -1,18 +1,16 @@
 {
   "name": "vite_react_shadcn_ts",
-  "homepage": "https://anurag07code.github.io/Project_4_Portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "prebuild": "node scripts/copy-assets.cjs",
-    "build": "vite build && node scripts/postbuild.cjs",
+    "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "echo 'Use Vercel for deployment' && exit 0"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
