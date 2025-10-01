@@ -33,6 +33,23 @@ const Contact = () => {
                 </div>
               </a>
             </Card>
+
+            <Card className="p-6 shadow-card transition-smooth hover:shadow-glow hover:scale-[1.02] animate-slide-in">
+              <a 
+                href="mailto:anuragsajeev007@gmail.com" 
+                className="flex items-start gap-4 group"
+              >
+                <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary transition-smooth">
+                  <Mail className="h-6 w-6 text-primary group-hover:text-primary-foreground transition-smooth" />
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-1">Email (Personal)</h3>
+                  <p className="text-sm text-muted-foreground group-hover:text-primary transition-smooth">
+                    anuragsajeev007@gmail.com
+                  </p>
+                </div>
+              </a>
+            </Card>
             
             <Card className="p-6 shadow-card transition-smooth hover:shadow-glow hover:scale-[1.02] animate-slide-in">
               <a 
@@ -74,7 +91,7 @@ const Contact = () => {
                 className="transition-smooth hover:scale-105"
                 asChild
               >
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/anurag07code" target="_blank" rel="noopener noreferrer">
                   <Github className="mr-2 h-5 w-5" />
                   GitHub
                 </a>

@@ -66,6 +66,54 @@ const Experience = () => {
               </div>
             </div>
           </Card>
+
+          <Card className="p-8 shadow-card transition-smooth hover:shadow-glow animate-slide-in border-l-4 border-l-primary/70" style={{ animationDelay: "0.05s" }}>
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-lg bg-primary/10">
+                  <Briefcase className="h-6 w-6 text-primary" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-semibold">AI Engineer Intern</h3>
+                  <div className="flex flex-wrap items-center gap-4 mt-2 text-muted-foreground">
+                    <div className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4" />
+                      Trivandrum, Kerala, India · Hybrid
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Calendar className="h-4 w-4" />
+                      Sep 2025 – Present
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-1">Tata Consultancy Services · Internship</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+
+          <Card className="p-8 shadow-card transition-smooth hover:shadow-glow animate-slide-in border-l-4 border-l-accent" style={{ animationDelay: "0.1s" }}>
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-lg bg-accent/10">
+                  <Briefcase className="h-6 w-6 text-accent" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-semibold">Student Ambassador</h3>
+                  <div className="flex flex-wrap items-center gap-4 mt-2 text-muted-foreground">
+                    <div className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4" />
+                      —
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Calendar className="h-4 w-4" />
+                      Aug 2025 – Present
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-1">Mozilla · Part-time</p>
+                </div>
+              </div>
+            </div>
+          </Card>
         </div>
       </div>
     </section>

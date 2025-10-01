@@ -23,6 +23,20 @@ const educationData = [
     period: "2018 - 2021",
     grade: "CGPA: 8.89/10.0",
     current: false
+  },
+  {
+    degree: "Plus Two (Biology Science) — 93.3%",
+    institution: "GHSS Kilimanoor, Thiruvananthapuram, Kerala, India",
+    period: "2016 - 2018",
+    grade: "Directorate of Higher Secondary Education (DHSE)",
+    current: false
+  },
+  {
+    degree: "SSLC — 95%",
+    institution: "GHSS Kilimanoor, Thiruvananthapuram, Kerala, India",
+    period: "2015 - 2016",
+    grade: "Kerala Board of Public Examinations (KBPE)",
+    current: false
   }
 ];
 

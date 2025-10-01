@@ -52,6 +52,15 @@ const Hero = () => {
               <FileText className="mr-2 h-5 w-5" />
               View Projects
             </Button>
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="transition-smooth hover:scale-105"
+              onClick={() => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              <FileText className="mr-2 h-5 w-5" />
+              View Experience
+            </Button>
           </div>
           
           <div className="flex items-center justify-center gap-4 pt-6">

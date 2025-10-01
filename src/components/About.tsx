@@ -24,12 +24,8 @@ const About = () => {
                 improve AI models. My goal is to build smarter and more reliable AI systems 
                 by combining insights from both fields.
               </p>
-              <div className="grid grid-cols-3 gap-4 pt-4">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">9.2</div>
-                  <div className="text-sm text-muted-foreground">CGPA</div>
-                </div>
-                <div className="text-center">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pt-4">
+                <div className="text-center hidden md:block">
                   <div className="text-3xl font-bold text-primary">3271</div>
                   <div className="text-sm text-muted-foreground">GATE AIR</div>
                 </div>
@@ -55,6 +51,21 @@ const About = () => {
                 </div>
               </Card>
               
+              <Card className="p-6 shadow-card transition-smooth hover:shadow-glow hover:scale-105 border-l-4 border-l-primary/70">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-lg bg-primary/10">
+                    <Atom className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Physics</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Mathematical Physics, Classical Mechanics, Quantum Mechanics, Electromagnetism, Atomic & Molecular Physics,
+                      Nuclear & Particle Physics, Electronics & Microprocessors, Condensed Matter Physics, Thermodynamics & Statistical Physics
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
               <Card className="p-6 shadow-card transition-smooth hover:shadow-glow hover:scale-105 border-l-4 border-l-accent">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-lg bg-accent/10">
