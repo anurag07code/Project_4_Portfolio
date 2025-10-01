@@ -84,11 +84,7 @@ const Hero = () => {
         </div>
       </div>
       
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
-        <div className="w-6 h-10 border-2 border-primary rounded-full flex items-start justify-center p-2">
-          <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse" />
-        </div>
-      </div>
+      {/* removed animated scroll indicator */}
     </section>
   );
 };

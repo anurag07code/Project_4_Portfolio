@@ -15,7 +15,7 @@ const Experience = () => {
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-lg bg-primary/10">
-                  <Briefcase className="h-6 w-6 text-primary" />
+                  <img src="/picture/Logo_of_University_of_Kerala.png" alt="University of Kerala" className="h-10 w-10 object-contain" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-semibold">Researcher (Master's Thesis Work)</h3>
@@ -71,7 +71,7 @@ const Experience = () => {
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-lg bg-primary/10">
-                  <Briefcase className="h-6 w-6 text-primary" />
+                  <img src="/picture/tcs logo.jpg" alt="TCS" className="h-10 w-10 object-contain" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-semibold">AI Engineer Intern</h3>
@@ -95,7 +95,7 @@ const Experience = () => {
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-lg bg-accent/10">
-                  <Briefcase className="h-6 w-6 text-accent" />
+                  <img src="/picture/mozilla logo.png" alt="Mozilla" className="h-10 w-10 object-contain" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-semibold">Student Ambassador</h3>

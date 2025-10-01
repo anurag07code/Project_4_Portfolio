@@ -8,21 +8,24 @@ const educationData = [
     institution: "Kerala University of Digital Sciences, Innovation and Technology",
     period: "2024 - 2026 (Pursuing)",
     grade: "CGPA: 9.2 (Semester 1)",
-    current: true
+    current: true,
+    logo: "/picture/Digital-University-Kerala logo.webp"
   },
   {
     degree: "M.Sc in Physics",
     institution: "University of Kerala",
     period: "2021 - 2023",
     grade: "83%",
-    current: false
+    current: false,
+    logo: "/picture/Logo_of_University_of_Kerala.png"
   },
   {
     degree: "B.Sc in Physics",
     institution: "University of Kerala",
     period: "2018 - 2021",
     grade: "CGPA: 8.89/10.0",
-    current: false
+    current: false,
+    logo: "/picture/Logo_of_University_of_Kerala.png"
   },
   {
     degree: "Plus Two (Biology Science) — 93.3%",
@@ -62,7 +65,11 @@ const Education = () => {
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                   <div className="flex items-start gap-4 flex-1">
                     <div className={`p-3 rounded-lg ${edu.current ? 'bg-primary/10' : 'bg-muted'}`}>
-                      <GraduationCap className={`h-6 w-6 ${edu.current ? 'text-primary' : 'text-muted-foreground'}`} />
+                      {edu.logo ? (
+                        <img src={edu.logo} alt={edu.institution} className="h-10 w-10 object-contain" />
+                      ) : (
+                        <GraduationCap className={`h-10 w-10 ${edu.current ? 'text-primary' : 'text-muted-foreground'}`} />
+                      )}
                     </div>
                     <div className="flex-1">
                       <div className="flex items-start justify-between flex-wrap gap-2">

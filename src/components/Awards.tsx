@@ -5,19 +5,19 @@ const achievements = [
   {
     title: "Young Innovators Program (YIP) 7.0 – K-DISC",
     date: "June 2025",
-    icon: Trophy,
+    icon: () => null,
     description: "Preliminary Round Winner: Selected for the ideation stage for the proposal CareerMap Kerala: A Smart Career Pathway Explorer for Technical Students, which introduced a gamified mobile/web platform that maps students' skills, interests, and qualifications to career paths."
   },
   {
     title: "Graduate Aptitude Test in Engineering (GATE)",
     date: "February 2024",
-    icon: Award,
+    icon: () => null,
     description: "Qualified GATE 2024 in Physics with an All India Rank (AIR) of 3271, eligible for M.Tech admissions in premier Indian institutes."
   },
   {
     title: "60th Indian Geophysical Union Annual Convention",
     date: "November 22-24, 2023",
-    icon: Presentation,
+    icon: () => null,
     description: "Presented oral presentation titled: 'Study of Vertical Distribution of Ozone Using Ozonesonde' at CUSAT, Kochi. Conference theme: Advances in Geosciences with Special Reference to Coastal Hazards."
   }
 ];
@@ -34,7 +34,6 @@ const Awards = () => {
           
           <div className="space-y-6">
             {achievements.map((achievement, index) => {
-              const Icon = achievement.icon;
               return (
                 <Card 
                   key={index} 
@@ -43,7 +42,15 @@ const Awards = () => {
                 >
                   <div className="flex items-start gap-4">
                     <div className="p-3 rounded-lg bg-accent/10">
-                      <Icon className="h-6 w-6 text-accent" />
+                      {index === 0 && (
+                        <img src="/picture/YIP logo.png" alt="YIP" className="h-10 w-10 object-contain" />
+                      )}
+                      {index === 1 && (
+                        <img src="/picture/Gate logo.webp" alt="GATE" className="h-10 w-10 object-contain" />
+                      )}
+                      {index === 2 && (
+                        <img src="/picture/IGU logo.jpeg" alt="IGU" className="h-10 w-10 object-contain" />
+                      )}
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
