@@ -1,6 +1,6 @@
 // Create a SPA fallback for GitHub Pages by copying index.html to 404.html
-import { copyFileSync, existsSync, mkdirSync } from "fs";
-import { dirname, resolve } from "path";
+const { copyFileSync, existsSync, mkdirSync } = require("fs");
+const { resolve } = require("path");
 
 const projectRoot = process.cwd();
 const distDir = resolve(projectRoot, "dist");
